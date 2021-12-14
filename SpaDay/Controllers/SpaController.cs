@@ -55,6 +55,18 @@ namespace SpaDay.Controllers
                     appropriateFacials.Add(facials[i]);
                 }
             }
+            ViewBag.clientName = name;
+            ViewBag.clientSkinType = skintype;
+            ViewBag.clientManipedi = manipedi;
+            ViewBag.clientAppropriateFacials = appropriateFacials;
+
+            string manicureMessage =
+                "Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.";
+            ViewBag.manicureMessage = manicureMessage;
+            string pedicureMessage =
+                "Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!";
+            ViewBag.pedicureMessage =pedicureMessage;
+
             return View();
         }
 
